@@ -1,0 +1,103 @@
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  min-height: 100vh;
+}
+
+#main__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111525;
+  height: 65vh;
+  width: 50vw;
+}
+
+#heading h1 {
+  font-size: var(--sizes--size-24);
+  font-weight: 500;
+  line-height: 0;
+}
+
+#heading p {
+  text-align: right;
+  line-height: 0;
+  position: relative;
+}
+
+#badge__container {
+  display: flex;
+  margin: 2rem auto;
+  justify-content: center;
+  gap: 2em;
+}
+.badge__card {
+  border: 0.01em solid rgb(168, 167, 167);
+  background-color: inherit;
+  color: white;
+  font-size: var(--sizes--size-base);
+  border-radius: 0.6em;
+  padding: 1.2em 2rem;
+}
+
+#hero img {
+  height: 65vh;
+}
+
+/* Responsiveness is handled here  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #hero {
+    font-size: var(--sizes--size-8);
+    min-height: auto;
+  }
+  #main__heading {
+    margin: 9rem 0 5rem auto;
+    height: 35vh;
+  }
+  #hero img {
+    margin: 9rem auto auto 0;
+    height: 35vh;
+  }
+
+  #main__heading {
+    width: 100%;
+  }
+  #heading h1 {
+    font-size: var(--sizes--size-16);
+  }
+
+  .badge__card {
+    padding: 0.8rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    flex-direction: column-reverse;
+    font-size: var(--sizes--size-8);
+    height: auto;
+    min-height: auto;
+  }
+  #main__heading {
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+  }
+  #heading h1 {
+    font-size: var(--sizes--size-16);
+  }
+
+  .badge__card {
+    padding: 0.8rem 1rem;
+  }
+
+  #hero img {
+    width: 100%;
+    height: auto;
+  }
+}

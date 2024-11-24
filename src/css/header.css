@@ -1,0 +1,22 @@
+#header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  min-height: 100px;
+}
+
+#header__buttons {
+  display: flex;
+  align-items: center;
+}
+#header__buttons li {
+  list-style: none;
+  margin: auto 2rem;
+}
+
+#header__buttons li a {
+  color: white;
+}

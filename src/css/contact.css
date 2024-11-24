@@ -1,0 +1,175 @@
+.container {
+  width: 60vw;
+  margin: auto;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  border-radius: 20px;
+  margin-top: 200px;
+}
+
+.footer_wrapper {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer_title {
+  font-family: var(--museo);
+  color: var(--white-colors--white);
+  font-size: var(--sizes--size-32);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: var(--sizes--size-32);
+}
+
+.footer_title.footer_title_gradient {
+  background-image: linear-gradient(
+    180deg,
+    var(--gradients--main-gradient),
+    var(--gradients--secondary-gradient)
+  );
+  font-size: var(--sizes--size-24);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 0;
+}
+
+.form {
+  border: 1px solid var(--black-colors--light-black);
+  border-radius: 1.5rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+}
+.form-group {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  display: flex;
+}
+.form_group_label {
+  font-family: var(--museo);
+  color: var(--white-colors--white);
+}
+.form_group_input {
+  border: 1px solid var(--black-colors--light-black);
+  font-family: var(--nohemi-med);
+  color: var(--white-colors--white);
+  font-size: var(--sizes--size-base);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 0.5rem;
+}
+.w-input {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 95%;
+  height: 38px;
+  margin-bottom: 1.5rem;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  display: block;
+}
+
+.form_group_input.text_area {
+  font-size: var(--sizes--size-base);
+  padding: 2rem 12px;
+}
+
+.success-message {
+  background-color: var(--colorful--green);
+  border-radius: 2rem;
+  margin-top: 4rem;
+}
+
+.w-form-done {
+  text-align: center;
+  background-color: #ddd;
+  padding: 20px;
+  display: none;
+}
+
+.btn_submit {
+  border: 2px solid var(--black-colors--light-black);
+
+  font-family: var(--museo);
+  color: var(--white-colors--white);
+  font-size: var(--sizes--size-base);
+  text-transform: capitalize;
+  background-color: rgba(56, 152, 236, 0);
+  border-radius: 0.6rem;
+  order: 0;
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+}
+
+.error_msg {
+  background-color: var(--colorful--orange);
+  font-family: var(--nohemi-med);
+  color: var(--black-colors--med-black);
+  font-size: var(--sizes--size-base);
+  text-transform: capitalize;
+  border-radius: 2rem;
+  padding: 2rem;
+  line-height: 1.6rem;
+}
+
+.w-form-fail {
+  background-color: #ffdede;
+  margin-top: 10px;
+  padding: 10px;
+  display: none;
+}
+
+.link-block {
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  transition: transform 0.2s;
+  display: inline-flex;
+}
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.copyrights {
+  font-family: var(--museo);
+  color: var(--white-colors--white);
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 200;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: calc(100% - 19rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: auto;
+    margin: auto;
+  }
+  .form {
+    margin: auto;
+    width: 80%;
+  }
+  .w-form {
+    width: 100%;
+  }
+}
