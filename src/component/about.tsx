@@ -29,7 +29,7 @@ export const About = () => {
           highly pixel perfection web pages.
         </p>
         <a
-          href="https://drive.google.com/drive/u/0/folders/1ssdKAw_FySEOBhhOjmf4knZqcrCU4zKW"
+          href="https://drive.google.com/file/d/1wcCLxi_pTAvKUmYPVOLwQKkJF9AVxWXg/view?usp=sharing"
           id="curriculum__vita"
         >
           <DownloadIcon />
