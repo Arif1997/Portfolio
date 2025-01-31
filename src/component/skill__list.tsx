@@ -4,6 +4,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
+import { useState } from "react";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "rgba(66, 66, 66, 1)",
@@ -23,11 +24,25 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function FullWidthGrid() {
+  // const [details, setDetails] = useState({
+  //   frontend_display: false,
+  //   backend_display: false,
+  //   core_knowledge_display: false,
+  //   database_dispaly: false,
+  // });
+
   return (
     <Box sx={{ flexGrow: 1, mt: "2rem", ml: "1rem", mr: "1rem" }}>
       <Grid container spacing={3}>
         <Grid item xs={6} md={3}>
-          <span className="skill__category">
+          <span
+            className="skill__category"
+            // onClick={() =>
+            //   setDetails( {
+            //     details.frontend_display : true;
+            //   })
+            // }
+          >
             <img src="/images/frontend.webp" alt="Front end" />
           </span>
           <Item>

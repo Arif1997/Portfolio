@@ -1,5 +1,7 @@
 import "../css/about.css";
 import DownloadIcon from "@mui/icons-material/Download";
+import Carrossel from "./carrossel";
+
 export const About = () => {
   return (
     <section className="about__section" id="about__section">
@@ -35,6 +37,7 @@ export const About = () => {
           <DownloadIcon />
           curriculum vita
         </a>
+        <Carrossel />
       </div>
     </section>
   );
