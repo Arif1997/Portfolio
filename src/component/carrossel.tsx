@@ -45,18 +45,6 @@ const Carrossel = () => {
       return t * 2 * z;
     };
 
-    const calculateFov = (carouselProps: { w: number; h: number }): number => {
-      const perspective = parseFloat(
-        window
-          .getComputedStyle(containerCarrossel)
-          .perspective.replace("px", "")
-      );
-      const length =
-        Math.sqrt(carouselProps.w * carouselProps.w) +
-        Math.sqrt(carouselProps.h * carouselProps.h);
-      return 2 * Math.atan(length / (2 * perspective)) * (180 / Math.PI);
-    };
-
     const getPosX = (x: number): void => {
       currentMousePos = x;
       moveTo = currentMousePos < lastMousePos ? moveTo - 2 : moveTo + 2;
@@ -90,7 +78,6 @@ const Carrossel = () => {
       const gap = 20;
       const tz = distanceZ(carrosselProps.w, length, gap);
 
-      const fov = calculateFov(carrosselProps);
       const height = calculateHeight(tz);
 
       container.style.width = `${tz * 0.8 + gap * length}px`;
